@@ -20,7 +20,9 @@ function forecast(latitude, longitude, callback) {
         current.temperature +
         " degrees out, it feels like " +
         current.feelslike +
-        " degrees out";
+        " degrees out. The humidity is " +
+        current.humidity +
+        "%.";
       callback(undefined, dataStr);
     }
   });
